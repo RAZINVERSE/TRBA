@@ -71,11 +71,46 @@
 <body>
   <h1>TRBA</h1>
 
-  <nav>
+  <style>
+  nav {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    background: linear-gradient(270deg, red, blue, green, purple);
+    background-size: 400% 400%;
+    animation: rgbGlow 6s infinite;
+    box-shadow: 0 0 20px rgba(255,255,255,0.6);
+    transition: transform 0.3s;
+  }
+
+  nav a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(255,255,255,0.9);
+  }
+
+  @keyframes rgbGlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+</style>
+
+<nav>
   <a href="index.html">Home</a>
   <a href="downloads.html">Downloads</a>
   <a href="links.html">Links</a>
 </nav>
+
 
   <div class="content">
     <p>⚡ Welcome to <b>TRBA Boot Camp</b> — the place where gaming legends are born.</p>

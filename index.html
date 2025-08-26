@@ -1,1 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TRBA Boot Camp</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial Black', sans-serif;
+      background: linear-gradient(135deg, #000000, #300000, #111111);
+      color: white;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    /* RGB glowing border */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border: 8px solid;
+      border-image: linear-gradient(90deg, red, blue, green, purple, orange) 1;
+      animation: rgb-border 5s infinite linear;
+      pointer-events: none;
+    }
+
+    @keyframes rgb-border {
+      0% { border-image-source: linear-gradient(90deg, red, blue, green, purple, orange); }
+      100% { border-image-source: linear-gradient(450deg, red, blue, green, purple, orange); }
+    }
+
+    h1 {
+      font-size: 4em;
+      margin-top: 40px;
+      text-shadow: 0 0 20px red, 0 0 40px darkred;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      background: linear-gradient(45deg, red, black);
+      padding: 12px 25px;
+      margin: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 15px red;
+      transition: all 0.3s ease;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: linear-gradient(45deg, black, red);
+      box-shadow: 0 0 25px crimson, 0 0 40px red;
+      transform: scale(1.1);
+    }
+
+    .content {
+      margin-top: 50px;
+      font-size: 1.3em;
+      line-height: 1.8;
+    }
+  </style>
+</head>
+<body>
+  <h1>TRBA</h1>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Downloads</a>
+    <a href="#">Links</a>
+  </nav>
+
+  <div class="content">
+    <p>⚡ Welcome to <b>TRBA Boot Camp</b> — the place where gaming legends are born.</p>
+    <p>🎮 Join us and experience the dangerous, thrilling world of gaming battles.</p>
+    <p>🔥 Stay tuned for updates, downloads, and exclusive content.</p>
+  </div>
+</body>
+</html>
 
